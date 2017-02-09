@@ -1,7 +1,6 @@
 # About
 Ceramixx is an alternative Stl Slicer and GCode Generator with an own user
 interface written in QT.
-
 There are multible GCode generators out there like like
 [Slic3r](http://slic3r.org/) and [Skeinforge](http://reprap.org/wiki/Skeinforge)
 but most of them are focused on plastic 3D print.
@@ -12,7 +11,6 @@ GCode for the Ceramics printing process but come short on other ends.
 
 Ceramixx focuses on a simple but powerful to use approach to generate GCode
 specifically for Ceramics printing.
-
 See Features for a listing of Ceramixx features.
 
 ## Features
