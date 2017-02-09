@@ -8,7 +8,6 @@ but most of them are focused on plastic 3D print.
 Ceramixx instead is optimized for Ceramics printing. Experiments showed that
 GCode generators for plastic produce often too complex and restrictive
 GCode for the Ceramics printing process but come short on other ends.
-
 Ceramixx focuses on a simple but powerful to use approach to generate GCode
 specifically for Ceramics printing.
 See Features for a listing of Ceramixx features.
