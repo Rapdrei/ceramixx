@@ -4,6 +4,8 @@ import { applyMiddleware, createStore, compose } from 'redux'
 import createLogger from 'redux-logger'
 import { Provider } from 'react-redux'
 import {Route, IndexRoute} from 'react-router';
+import thunk from 'redux-thunk'
+import promise from 'redux-promise'
 
 import { Router, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
@@ -16,8 +18,8 @@ import Layout from './components/Layout';
 import allReducers from './reducers/index.js'
 
 // Add bootstrap
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap-theme.css';
 
 // logger for development modus @see redux-logger
 const logger = createLogger()
@@ -27,7 +29,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 // create store and register all available reducers
 let store = createStore(
   allReducers, composeEnhancers(
-  applyMiddleware(logger)
+  applyMiddleware(thunk, promise, logger)
   )
 );
 
