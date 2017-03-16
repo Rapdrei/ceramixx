@@ -1,35 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { applyMiddleware, createStore, compose } from 'redux'
 import createLogger from 'redux-logger'
 import { Provider } from 'react-redux'
-import {Route, IndexRoute} from 'react-router';
-import thunk from 'redux-thunk'
-import promise from 'redux-promise'
+import {Route, IndexRoute} from 'react-router'
 
 import { Router, browserHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
 
 // Components used by the router
-import App from './App';
-import Layout from './components/Layout';
+import App from './components/App'
 
 //import reducers from './reducers'
 import allReducers from './reducers/index.js'
 
 // Add bootstrap
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap/dist/css/bootstrap-theme.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 // logger for development modus @see redux-logger
 const logger = createLogger()
 // This implements Redux dev tools into our project
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 // create store and register all available reducers
 let store = createStore(
   allReducers, composeEnhancers(
-  applyMiddleware(thunk, promise, logger)
+  applyMiddleware(logger)
   )
 );
 
