@@ -15,8 +15,10 @@ import App from './components/App'
 import allReducers from './reducers/index.js'
 
 // Add bootstrap
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap-theme.css'
+
+import './stylesheets/layout.scss'
 
 // logger for development modus @see redux-logger
 const logger = createLogger()
