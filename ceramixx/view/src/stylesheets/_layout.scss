@@ -1,0 +1,40 @@
+$background-color: #FAFAF9;
+$panel-color: #363636;
+$heading-color: #5CA7D5;
+
+.center-view {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left-view {
+  display: flex;
+  flex: 1;
+  min-width: 400px;
+  max-width: 400px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $panel-color;
+}
+
+.head-panel {
+  display: flex;
+  height: 100px;
+  background-color: $heading-color;
+}
+
+.input-panel {
+  display: flex;
+  height: 100vh;
+  background-color: $panel-color;
+}
+
+.right-view {
+  display: flex;
+  flex: 2;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $background-color;
+}

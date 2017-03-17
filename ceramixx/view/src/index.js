@@ -19,7 +19,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap-theme.css'
 
 // Add stylesheets
-import './stylesheets/layout.scss'
+import './stylesheets/app.scss'
 
 // logger for development modus @see redux-logger
 const logger = createLogger()
