@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 
 import Canvas from './Canvas'
 
-const centerStyle = {
-  background: "blue",
-  color: "green"
+let styles = {
+  centerLayout: {
+    display: 'flex',
+    flex: 2
+  }
 }
 
 const CenterView = () => (
-  <div id="CenterView" style={centerStyle}>
-    <Canvas/>
+  <div style={styles.centerLayout}>
   </div>
 )
 
