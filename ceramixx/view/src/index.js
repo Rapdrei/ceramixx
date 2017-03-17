@@ -18,6 +18,7 @@ import allReducers from './reducers/index.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/css/bootstrap-theme.css'
 
+// Add stylesheets
 import './stylesheets/layout.scss'
 
 // logger for development modus @see redux-logger
