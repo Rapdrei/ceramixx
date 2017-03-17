@@ -1,21 +1,12 @@
 import React, { Component } from 'react'
-import { AppRegistry, View } from 'react-native'
 
-import CenterView from './CenterView'
 import LeftSideView from './LeftSideView'
-
-let styles = {
-  mainLayout: {
-    display: 'flex',
-    height: 100,
-    width: 100
-  }
-}
+import RightSideView from './RightSideView'
 
 const App = () => (
-  <div className="App" style={styles.mainLayout}>
+  <div className="center-view">
     <LeftSideView/>
-    <CenterView/>
+    <RightSideView/>
   </div>
 )
 
