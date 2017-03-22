@@ -9,27 +9,6 @@ $font: "BalooBhainaRegular";
     src: url("./BalooBhaina-Regular.ttf")
 }
 
-@mixin rotate($degrees) {
-  -webkit-transform: rotate($degrees);
-  -moz-transform: rotate($degrees);
-  -ms-transform: rotate($degrees);
-}
-
 body {
   font-family: "BalooBhainaRegular";
-}
-
-.logo-title {
-  margin-left: 10%;
-  margin-top: 20pt;
-  font-weight: normal;
-  font-size: 27pt;
-  color: white;
-  text-shadow: 2px 4px #616161;
-
-  span {
-    display: inline-block;
-    padding-left: 2px;
-    @include rotate(15deg);
-  }
 }

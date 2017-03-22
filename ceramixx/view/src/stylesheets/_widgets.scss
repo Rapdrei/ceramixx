@@ -1,4 +1,16 @@
 .input-label {
-  height: 80px;
-  width: 100vh;
+  display: flex;
+  max-height: 50px;
+  font-weight: lighter;
+  font-size: x-large;
+}
+
+.input-form {
+  max-height: 50px;
+  display: flex;
+
+
+}
+.input-field {
+  width: 90%;
 }

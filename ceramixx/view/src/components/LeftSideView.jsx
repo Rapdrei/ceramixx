@@ -8,7 +8,6 @@ const LeftSideView = () => (
       <p className="logo-title"> cerami<span>x</span><span>x</span></p>
     </div>
     <InputPanel/>
-    <div className="input-field"></div>
 
   </div>
 )

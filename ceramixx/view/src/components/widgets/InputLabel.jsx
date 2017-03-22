@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-const InputLabel = () => (
+const InputLabel = (props) => (
   <div className="input-label">
-    <p>Label 1</p>
+    <p>{props.labelName}</p>
   </div>
 )
 
