@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 
-import InputPanel from './InputPanel'
+import SettingsMenu from './SettingsMenu'
 
-const LeftSideView = () => (
-  <div className="left-view">
-    <div className="head-panel">
-      <p className="logo-title"> cerami<span>x</span><span>x</span></p>
-    </div>
-    <InputPanel/>
+export default class LeftSideView extends React.Component {
+  render() {
+    return (
+      <div className="left-view">
+        <div className="head-panel">
+          <p className="logo-title"> cerami<span>x</span><span>x</span></p>
+        </div>
+        <SettingsMenu/>
 
-  </div>
-)
-
-export { LeftSideView as default }
+      </div>
+    )
+  }
+} 
