@@ -9,6 +9,11 @@ $font: "BalooBhainaRegular";
     src: url("./BalooBhaina-Regular.ttf")
 }
 
+@font-face {
+    font-family:"TitilliumWeb";
+    src: url("./TitilliumWeb-Light.ttf")
+}
+
 body {
-  font-family: "BalooBhainaRegular";
+  font-family: "TitilliumWeb";
 }
