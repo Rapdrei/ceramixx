@@ -4,9 +4,9 @@ import { ButtonToolbar, Button } from 'react-bootstrap'
 
 const SettingsMenu = (props) => (
   <ButtonToolbar className="settings-menu">
-    <Button className="settings-button"> Workspace</Button>
-    <Button className="settings-button"> Placement</Button>
-    <Button className="settings-button"> Slicer</Button>
+    <MenuButton buttonText="Workspace"/>
+    <MenuButton buttonText="Placement"/>
+    <MenuButton buttonText="Slider"/>
   </ButtonToolbar>
 )
 
