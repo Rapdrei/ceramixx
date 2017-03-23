@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { FormGroup, ControlLabel, FormControl, HelpBlock } from 'react-bootstrap';
 
 
-const InputForm = React.createClass({
+export default class SettingsInputForm extends React.Component({
   getInitialState() {
     return {
       value: ''
@@ -29,7 +29,6 @@ const InputForm = React.createClass({
           validationState={this.getValidationState()}
           className="input-form"
         >
-          {/* <ControlLabel>Working example with validation</ControlLabel> */}
           <FormControl
             type="text"
             value={this.state.value}
@@ -43,5 +42,3 @@ const InputForm = React.createClass({
     );
   }
 });
-
-export { InputForm as default }

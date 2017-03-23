@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-import InputLabel from './widgets/InputLabel'
-import InputForm from './widgets/InputForm'
-import SettingsSlider from './widgets/SettingsSlider'
-import SettingsMenu from './widgets/SettingsMenu'
+import InputLabel from './InputLabel'
+import InputForm from './InputForm'
+import SettingsSlider from './SettingsSlider'
+import SettingsMenu from './SettingsMenu'
 
 const InputPanel = () => (
   <div className="input-panel">
