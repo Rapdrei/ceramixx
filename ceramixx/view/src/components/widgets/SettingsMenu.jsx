@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import { ButtonToolbar, Button } from 'react-bootstrap'
+import MenuButton from './MenuButton'
 
 const SettingsMenu = (props) => (
   <ButtonToolbar className="settings-menu">
