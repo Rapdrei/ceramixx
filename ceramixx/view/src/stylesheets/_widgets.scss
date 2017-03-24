@@ -35,17 +35,38 @@
 .settings-menu {
   display: flex;
   justify-content: flex-start;
-  height: 50px;
-  width: 80%;
+  height: 30px;
   flex-direction: row;
+
 }
 
 .settings-button {
   display: flex;
   flex: 1;
-  margin-right: -5px;
+  background-color: #5CA7D5;
+  height: 40px;
+  opacity: 0.6;
+  border: 0.1px solid #000000;
+  border-right: none;
+
+  p {
+    margin: auto;
+  }
 }
 
-.menu-button-active {
-  color: red;
+.settings-button-active {
+  opacity: 1.0;
+}
+
+// .outer-right-settings-button {
+//   border-radius: 0px 6px 6px 0px;
+// }
+//
+// .outer-left-settings-button {
+//   border-radius: 6px 0px 0px 6px;
+// }
+
+.settings-panel {
+  margin-left: 10%;
+  padding-top: 30px;
 }

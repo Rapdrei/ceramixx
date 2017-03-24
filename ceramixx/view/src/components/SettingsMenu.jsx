@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
-import { ButtonToolbar, Button } from 'react-bootstrap'
-import MenuButton from './MenuButton'
+import { CenterMenuButton, LeftMenuButton, RightMenuButton} from './MenuButton'
 
 export default class SettingsMenu extends React.Component {
   constructor(...props) {
@@ -54,28 +53,27 @@ export default class SettingsMenu extends React.Component {
 
   render() {
     return (
-      <ButtonToolbar className="settings-menu">
-        <MenuButton
+      <div className="settings-menu">
+        <LeftMenuButton
           buttonText="Workspace"
-          isActive={this.state.workspace}
+          className="outer-left-settings-button"
+          active={true}
           onClick={this.handleClickWorkspace.bind(this)}
         />
-        <MenuButton
+        <CenterMenuButton
           buttonText="Placement"
-          isActive={this.state.placement}
           onClick={this.handleClickPlacement.bind(this)}
         />
-        <MenuButton
+        <CenterMenuButton
           buttonText="Slicer"
-          isActive={this.state.slicer}
           onClick={this.handleClickSlicer.bind(this)}
         />
-        <MenuButton
-          buttonText="Custom Code"
-          isActive={this.state.customCode}
+        <RightMenuButton
+          buttonText="Code"
+          className="outer-right-settings-button"
           onClick={this.handleClickCustomCode.bind(this)}
         />
-      </ButtonToolbar>
+      </div>
     )
   }
 }

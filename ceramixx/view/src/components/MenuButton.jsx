@@ -1,12 +1,36 @@
 import React, { Component } from 'react'
 
-import { ButtonToolbar, Button } from 'react-bootstrap'
-
-const MenuButton = (props) => (
-  <Button
-    bsStyle={props.isActive? "success" : "default"}
-    className={"settings-button"}
-  </Button>
+const CenterMenuButton = (props) => (
+  <div
+    className={props.active?
+      "settings-button settings-button-active" :
+      "settings-button"
+    }
+    >
+      <p>{props.buttonText}</p>
+    </div>
 )
 
-export { MenuButton as default }
+const RightMenuButton = (props) => (
+  <div
+    className={props.active?
+      "settings-button outer-right-settings-button settings-button-active" :
+      "settings-button outer-right-settings-button"
+    }
+    >
+      <p>{props.buttonText}</p>
+    </div>
+)
+
+const LeftMenuButton = (props) => (
+  <div
+    className={props.active?
+      "settings-button outer-left-settings-button settings-button-active" :
+      "settings-button outer-left-settings-button"
+    }
+    >
+      <p>{props.buttonText}</p>
+    </div>
+)
+
+export { CenterMenuButton, RightMenuButton, LeftMenuButton }

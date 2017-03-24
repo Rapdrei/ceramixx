@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 
 import SettingsMenu from './SettingsMenu'
 import WorkspaceSettings from './WorkspaceSettings'
+import PlacementSettings from './PlacementSettings'
+import CustomCodeSettings from './CustomCodeSettings'
+import SlicerSettings from './SlicerSettings'
 
 export default class LeftSideView extends React.Component {
   constructor(...props) {
@@ -31,18 +34,20 @@ export default class LeftSideView extends React.Component {
         </div>
         <SettingsMenu/>
         <WorkspaceSettings/>
-        <
+        <PlacementSettings/>
+        <CustomCodeSettings/>
+        <SlicerSettings/>
       </div>
     )
   }
 
-  redirectSettingsView(view) {
-    switch (view) {
-      case 'expression':
-
-        break;
-      default:
-
-    }
-  }
+  // redirectSettingsView(view) {
+  //   switch (view) {
+  //     case 'expression':
+  //
+  //       break;
+  //     default:
+  //
+  //   }
+  // }
 }
