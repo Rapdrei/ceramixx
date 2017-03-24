@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 import SettingsMenu from './SettingsMenu'
 import WorkspaceSettings from './WorkspaceSettings'
 import PlacementSettings from './PlacementSettings'
-import CustomCodeSettings from './CustomCodeSettings'
+import CodeSettings from './CodeSettings'
 import SlicerSettings from './SlicerSettings'
 
-export default class LeftSideView extends React.Component {
+export default class LeftView extends React.Component {
   constructor(...props) {
     super(...props)
 
@@ -17,7 +17,7 @@ export default class LeftSideView extends React.Component {
       PlacementSettings: {
 
       },
-      CustomCodeSettings: {
+      CodeSettings: {
 
       },
       SlicerSettings: {
@@ -35,7 +35,7 @@ export default class LeftSideView extends React.Component {
         <SettingsMenu/>
         <WorkspaceSettings/>
         <PlacementSettings/>
-        <CustomCodeSettings/>
+        <CodeSettings/>
         <SlicerSettings/>
       </div>
     )

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import LeftSideView from './LeftSideView'
-import RightSideView from './RightSideView'
+import LeftView from './LeftView'
+import RightView from './RightView'
 
 const App = () => (
   <div className="center-view">
-    <LeftSideView/>
-    <RightSideView/>
+    <LeftView/>
+    <RightView/>
   </div>
 )
 

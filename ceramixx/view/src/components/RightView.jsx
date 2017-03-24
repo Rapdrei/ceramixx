@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-const RightSideView = () => (
+const RightView = () => (
   <div className="right-view">
   </div>
 )
 
-export { RightSideView as default }
+export { RightView as default }
