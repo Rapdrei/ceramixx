@@ -57,19 +57,22 @@ export default class SettingsMenu extends React.Component {
         <LeftMenuButton
           buttonText="Workspace"
           className="outer-left-settings-button"
-          active={true}
+          active={this.state.workspace}
           onClick={this.handleClickWorkspace.bind(this)}
         />
         <CenterMenuButton
           buttonText="Placement"
+          active={this.state.placement}
           onClick={this.handleClickPlacement.bind(this)}
         />
         <CenterMenuButton
           buttonText="Slicer"
+          active={this.state.slicer}
           onClick={this.handleClickSlicer.bind(this)}
         />
         <RightMenuButton
           buttonText="Code"
+          active={this.state.customCode}
           className="outer-right-settings-button"
           onClick={this.handleClickCustomCode.bind(this)}
         />

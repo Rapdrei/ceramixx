@@ -1,36 +1,36 @@
 import React, { Component } from 'react'
 
 const CenterMenuButton = (props) => (
-  <div
+  <button
     className={props.active?
       "settings-button settings-button-active" :
       "settings-button"
     }
     >
       <p>{props.buttonText}</p>
-    </div>
+    </button>
 )
 
 const RightMenuButton = (props) => (
-  <div
+  <button
     className={props.active?
       "settings-button outer-right-settings-button settings-button-active" :
       "settings-button outer-right-settings-button"
     }
     >
       <p>{props.buttonText}</p>
-    </div>
+    </button>
 )
 
 const LeftMenuButton = (props) => (
-  <div
+  <button
     className={props.active?
       "settings-button outer-left-settings-button settings-button-active" :
       "settings-button outer-left-settings-button"
     }
     >
       <p>{props.buttonText}</p>
-    </div>
+    </button>
 )
 
 export { CenterMenuButton, RightMenuButton, LeftMenuButton }
